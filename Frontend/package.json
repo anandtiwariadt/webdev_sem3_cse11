@@ -1,0 +1,9 @@
+{
+  "name": "frontend-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix \"Postman Page\" run dev",
+    "build": "npm --prefix \"Postman Page\" run build",
+    "lint": "npm --prefix \"Postman Page\" run lint"
+  }
+}

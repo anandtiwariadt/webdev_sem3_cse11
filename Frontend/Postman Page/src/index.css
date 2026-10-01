@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+body {
+  background: #edf3f6;
+  color: #202522;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+#root {
+  min-height: 100vh;
+}

@@ -1,0 +1,151 @@
+.dashboard-page {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  background: #f3f6f5;
+}
+
+.dashboard-content {
+  width: min(100%, 64rem);
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.dashboard-eyebrow {
+  margin: 0 0 0.5rem;
+  color: #b45d3c;
+  font: 700 0.75rem 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  color: #173b3a;
+  font-size: 2.25rem;
+}
+
+.dashboard-header p:last-child {
+  margin: 0.75rem 0 0;
+  color: #5e6d69;
+}
+
+.secondary-button,
+.signout-button,
+.update-button,
+.delete-button {
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font: 700 0.9rem 'Trebuchet MS', sans-serif;
+}
+
+.signout-button {
+  padding: 0.55rem 0.8rem;
+  border: 1px solid #b9c9c5;
+  background: transparent;
+  color: #384946;
+  white-space: nowrap;
+}
+
+.signout-button:hover {
+  background: #f0f5f3;
+}
+
+.secondary-button {
+  padding: 0.8rem 1rem;
+  background: #173b3a;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.users-table-wrapper {
+  overflow-x: auto;
+  border: 1px solid #d8e2df;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgb(23 59 58 / 8%);
+}
+
+.users-table {
+  width: 100%;
+  min-width: 38rem;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.users-table th,
+.users-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #dce6e3;
+}
+
+.users-table th {
+  background: #f0f5f3;
+  color: #173b3a;
+  font: 700 0.8rem 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.users-table td {
+  color: #384946;
+}
+
+.users-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.user-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.update-button,
+.delete-button {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid #b9c9c5;
+  background: transparent;
+  color: #384946;
+}
+
+.update-button:hover,
+.delete-button:hover {
+  background: #f0f5f3;
+}
+
+.table-message,
+.dashboard-message {
+  margin: 0;
+  padding: 1.25rem;
+  color: #5e6d69;
+  text-align: center;
+}
+
+.dashboard-message {
+  padding: 1rem 0;
+  text-align: left;
+}
+
+@media (max-width: 40rem) {
+  .dashboard-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .dashboard-header h1 {
+    font-size: 2rem;
+  }
+
+  .secondary-button {
+    align-self: flex-start;
+  }
+}
