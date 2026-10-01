@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVS - Dive into Unimaginable Dimensions</title>
+  <meta name="description" content="Step beyond the familiar and discover places, experiences, and possibilities that exist beyond imagination. Your journey into the unknown begins here.">
+  
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Fullscreen Ambient Background Layer (Uploaded Dimension Asset) -->
+  <div class="bg-layer" aria-hidden="true">
+    <div class="bg-image"></div>
+    <div class="bg-overlay"></div>
+  </div>
+
+
+  <!-- ====================================================================
+       VIEW 1: LANDING PAGE
+       ==================================================================== -->
+  <div id="landingView" class="app-view landing-view active">
+    
+    <!-- Navigation Bar -->
+    <header class="navbar-wrapper">
+      <nav class="navbar" aria-label="Main Navigation">
+        <!-- Brand Logo -->
+        <a href="#" class="nav-logo" id="navLogoBtn" aria-label="AVS Home">
+          <div class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="currentColor" fill-opacity="0.3"></polygon>
+            </svg>
+          </div>
+          <span class="logo-text">AVS</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="#intro" class="nav-link">Discover</a></li>
+          <li><a href="#exploration" class="nav-link">Exploration</a></li>
+          <li><a href="#features" class="nav-link">Dimensions</a></li>
+          <li><a href="#cta" class="nav-link">Journey</a></li>
+        </ul>
+
+        <!-- Action Buttons -->
+        <div class="nav-actions">
+          <button type="button" class="btn btn-ghost nav-signin-btn" id="navLoginBtn">Sign In</button>
+          <button type="button" class="btn btn-primary nav-cta-btn" id="navSignupBtn">Begin Your Journey</button>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+
+      <!-- Mobile Dropdown Menu -->
+      <div class="mobile-dropdown-menu" id="mobileDropdownMenu" aria-hidden="true">
+        <ul class="mobile-nav-links">
+          <li><a href="#intro" class="mobile-nav-link">Discover</a></li>
+          <li><a href="#exploration" class="mobile-nav-link">Exploration</a></li>
+          <li><a href="#features" class="mobile-nav-link">Dimensions</a></li>
+          <li><a href="#cta" class="mobile-nav-link">Journey</a></li>
+        </ul>
+        <div class="mobile-menu-actions">
+          <button type="button" class="btn btn-secondary" id="mobileNavLoginBtn">Sign In</button>
+          <button type="button" class="btn btn-primary" id="mobileNavSignupBtn">Begin Your Journey</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Landing Content -->
+    <main class="landing-content">
+      
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="hero-container">
+          <!-- Main Heading (Eyebrow removed as requested) -->
+          <h1 class="hero-title">
+            DIVE INTO<br>
+            <span class="gradient-text">UNIMAGINABLE</span><br>
+            DIMENSIONS.
+          </h1>
+
+          <!-- Description -->
+          <p class="hero-subtitle">
+            Step beyond the familiar and discover places, experiences, and possibilities that exist beyond imagination. Your journey into the unknown begins here.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-cta-group">
+            <button type="button" class="btn btn-primary hero-btn" id="heroSignupBtn">
+              <span>Begin Your Journey</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow-icon">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+            <button type="button" class="btn btn-secondary hero-btn hero-signin-btn" id="heroLoginBtn">
+              <span>Explore the Unknown</span>
+            </button>
+          </div>
+
+          <!-- Live Stats Grid -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <span class="stat-number">120+</span>
+              <span class="stat-label">Uncharted Dimensions</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">50K+</span>
+              <span class="stat-label">Limitless Explorers</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">4.9 ★</span>
+              <span class="stat-label">Extraordinary Rating</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SHORT INTRO SECTION -->
+      <section class="short-intro-section" id="intro">
+        <div class="section-container">
+          <div class="intro-glass-card">
+            <span class="section-tag">BEYOND THE FAMILIAR</span>
+            <h2 class="intro-title">THERE'S MORE BEYOND WHAT YOU KNOW.</h2>
+            <p class="intro-content">
+              The world is bigger than the places you've already seen. Wander through extraordinary landscapes, uncover hidden experiences, and discover a different side of every destination.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPLORATION SECTION -->
+      <section class="exploration-section" id="exploration">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-tag">EXPLORATION</span>
+            <h2 class="section-title">ENTER A DIFFERENT WORLD.</h2>
+            <p class="section-description">Discover unchartered realms tailored for those who dare to seek the extraordinary.</p>
+          </div>
+
+          <div class="exploration-grid">
+            <!-- Card 1: THE WILD -->
+            <div class="explore-card">
+              <div class="explore-card-badge">THE WILD</div>
+              <h3 class="explore-card-title">Untouched Frontiers</h3>
+              <p class="explore-card-text">Where untouched landscapes challenge the limits of exploration.</p>
+              <button type="button" class="explore-card-btn" data-destination="The Wild">
+                <span>Explore The Wild</span>
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+
+            <!-- Card 2: THE DEEP -->
+            <div class="explore-card">
+              <div class="explore-card-badge">THE DEEP</div>
+              <h3 class="explore-card-title">Subterranean Depths</h3>
+              <p class="explore-card-text">Dive beneath the surface and discover what waits beyond the familiar.</p>
+              <button type="button" class="explore-card-btn" data-destination="The Deep">
+                <span>Dive Into The Deep</span>
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+
+            <!-- Card 3: THE UNKNOWN -->
+            <div class="explore-card">
+              <div class="explore-card-badge">THE UNKNOWN</div>
+              <h3 class="explore-card-title">Limitless Horizons</h3>
+              <p class="explore-card-text">Follow paths less traveled and let curiosity decide where you go next.</p>
+              <button type="button" class="explore-card-btn" data-destination="The Unknown">
+                <span>Enter The Unknown</span>
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURE SECTION -->
+      <section class="features-section" id="features">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-tag">LIMITLESS POSSIBILITIES</span>
+            <h2 class="section-title">YOUR WORLD. WITHOUT LIMITS.</h2>
+            <p class="section-description">
+              Discover destinations that feel unreal, experiences you'll never forget, and journeys that become part of your story.
+            </p>
+          </div>
+
+          <div class="numbered-features-grid">
+            <!-- 01 — DISCOVER -->
+            <div class="numbered-feature-card">
+              <div class="feature-num-badge">01</div>
+              <h3 class="numbered-feature-title">DISCOVER</h3>
+              <p class="numbered-feature-text">Find places you've never imagined visiting.</p>
+            </div>
+
+            <!-- 02 — EXPERIENCE -->
+            <div class="numbered-feature-card">
+              <div class="feature-num-badge">02</div>
+              <h3 class="numbered-feature-title">EXPERIENCE</h3>
+              <p class="numbered-feature-text">Turn destinations into stories worth remembering.</p>
+            </div>
+
+            <!-- 03 — REMEMBER -->
+            <div class="numbered-feature-card">
+              <div class="feature-num-badge">03</div>
+              <h3 class="numbered-feature-title">REMEMBER</h3>
+              <p class="numbered-feature-text">Keep every journey, discovery, and experience in one place.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA BEFORE FOOTER -->
+      <section class="pre-footer-cta-section" id="cta">
+        <div class="cta-card">
+          <div class="cta-card-content">
+            <span class="section-tag">THE INVITATION</span>
+            <h2 class="cta-title">HOW FAR WILL YOU GO?</h2>
+            <p class="cta-subtitle">The unknown isn't waiting for someone else. Your next dimension is just one journey away.</p>
+            <div class="cta-actions">
+              <button type="button" class="btn btn-primary cta-btn" id="bannerSignupBtn">Dive In</button>
+              <button type="button" class="btn btn-secondary cta-btn" id="bannerLoginBtn">Sign In</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="landing-footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <div class="logo-container">
+              <div class="logo-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="currentColor" fill-opacity="0.3"></polygon>
+                </svg>
+              </div>
+              <span class="logo-text">AVS</span>
+            </div>
+            <p class="footer-desc">Dive • Discover • Explore • Beyond • Dimension • Journey • Limitless</p>
+          </div>
+          <div class="footer-bottom">
+            <p>© 2026 AVS Exploration Platform. All rights reserved.</p>
+            <div class="footer-auth-link">
+              <span>Already part of the journey?</span>
+              <button type="button" class="link-btn footer-login-btn" id="footerLoginBtn">Sign in</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+
+  <!-- ====================================================================
+       VIEW 2: AUTHENTICATION (SLIDING LOGIN + SIGNUP WITH TOP-LEFT BACK ARROW)
+       ==================================================================== -->
+  <div id="authView" class="app-view auth-view">
+    
+    <!-- Top-Left Floating Back Arrow Navigation -->
+    <div class="top-nav-bar">
+      <button type="button" class="back-arrow-btn" id="backToLandingBtn" aria-label="Back to Landing Page" title="Back to Home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span class="back-btn-text">Back to Home</span>
+      </button>
+
+      <!-- Mobile Tab Switcher inside Auth -->
+      <div class="mobile-nav-bar" aria-label="Mobile Authentication Tabs">
+        <button type="button" class="mobile-tab-btn active" id="mobileLoginTabBtn">Sign In</button>
+        <button type="button" class="mobile-tab-btn" id="mobileSignupTabBtn">Sign Up</button>
+      </div>
+    </div>
+
+    <!-- Main Sliding Auth Card -->
+    <main class="page-wrapper">
+      <div class="auth-card" id="authCard">
+        
+        <!-- ================================================================
+             1. SIGNUP FORM PANEL (Left Side)
+             ================================================================ -->
+        <section class="form-panel signup-panel" id="signupPanel" aria-label="Create Account" aria-hidden="true">
+          <div class="form-inner">
+            <div class="form-header">
+              <!-- 'ENTER THE UNKNOWN.' heading removed as requested -->
+              <p class="form-subtitle">Create your account and unlock a world beyond the ordinary.</p>
+            </div>
+
+            <div id="signupAlert" class="form-alert" role="alert" aria-live="polite" hidden>
+              <span class="alert-icon"></span>
+              <span class="alert-text"></span>
+            </div>
+
+            <form id="signupForm" class="auth-form" novalidate>
+              <!-- Full Name Field -->
+              <div class="form-group" id="signupNameGroup">
+                <label for="signupNameInput" class="form-label">Full Name</label>
+                <div class="input-wrapper">
+                  <input 
+                    type="text" 
+                    id="signupNameInput" 
+                    name="fullName"
+                    class="form-input" 
+                    placeholder="What should we call you?" 
+                    autocomplete="name"
+                    required
+                  >
+                </div>
+                <p class="field-error-msg" id="signupNameError" role="alert"></p>
+              </div>
+
+              <!-- Email Field -->
+              <div class="form-group" id="signupEmailGroup">
+                <label for="signupEmailInput" class="form-label">Email</label>
+                <div class="input-wrapper">
+                  <input 
+                    type="email" 
+                    id="signupEmailInput" 
+                    name="email"
+                    class="form-input" 
+                    placeholder="Enter your email" 
+                    autocomplete="email"
+                    required
+                  >
+                </div>
+                <p class="field-error-msg" id="signupEmailError" role="alert"></p>
+              </div>
+
+              <!-- Password Field -->
+              <div class="form-group" id="signupPasswordGroup">
+                <label for="signupPasswordInput" class="form-label">Password</label>
+                <div class="input-wrapper password-wrapper">
+                  <input 
+                    type="password" 
+                    id="signupPasswordInput" 
+                    name="password"
+                    class="form-input" 
+                    placeholder="Create a password" 
+                    autocomplete="new-password"
+                    required
+                  >
+                  <button 
+                    type="button" 
+                    class="toggle-password-btn" 
+                    id="toggleSignupPasswordBtn"
+                    aria-label="Show password"
+                    title="Toggle password visibility"
+                  >
+                    <svg class="eye-icon eye-show" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    <svg class="eye-icon eye-hide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display: none;">
+                      <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                    <line x1="1" y1="1" x2="23" y2="23"></line>
+                    </svg>
+                  </button>
+                </div>
+                <p class="field-error-msg" id="signupPasswordError" role="alert"></p>
+              </div>
+
+              <!-- Confirm Password Field -->
+              <div class="form-group" id="signupConfirmPasswordGroup">
+                <label for="signupConfirmPasswordInput" class="form-label">Confirm Password</label>
+                <div class="input-wrapper password-wrapper">
+                  <input 
+                    type="password" 
+                    id="signupConfirmPasswordInput" 
+                    name="confirmPassword"
+                    class="form-input" 
+                    placeholder="Confirm your password" 
+                    autocomplete="new-password"
+                    required
+                  >
+                  <button 
+                    type="button" 
+                    class="toggle-password-btn" 
+                    id="toggleSignupConfirmPasswordBtn"
+                    aria-label="Show password"
+                    title="Toggle password visibility"
+                  >
+                    <svg class="eye-icon eye-show" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    <svg class="eye-icon eye-hide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display: none;">
+                      <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                    <line x1="1" y1="1" x2="23" y2="23"></line>
+                    </svg>
+                  </button>
+                </div>
+                <p class="field-error-msg" id="signupConfirmPasswordError" role="alert"></p>
+              </div>
+
+              <!-- Terms & Conditions Checkbox -->
+              <div class="form-options terms-row" id="signupTermsGroup">
+                <label class="remember-me-label" for="signupTermsCheckbox">
+                  <input type="checkbox" id="signupTermsCheckbox" name="terms" class="custom-checkbox">
+                  <span class="checkbox-custom-box" aria-hidden="true">
+                    <svg viewBox="0 0 12 10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="1.5 5.5 4.5 8.5 10.5 1.5"></polyline>
+                    </svg>
+                  </span>
+                  <span class="remember-text terms-text">I agree to the <a href="#" class="terms-link" id="termsLink">Terms & Conditions.</a></span>
+                </label>
+                <p class="field-error-msg" id="signupTermsError" role="alert"></p>
+              </div>
+
+              <!-- Button: Begin Exploring -->
+              <button type="submit" id="createAccountBtn" class="btn btn-primary">
+                <span class="btn-text">Begin Exploring</span>
+                <span class="spinner" aria-hidden="true"></span>
+              </button>
+            </form>
+
+            <div class="form-footer">
+              <span class="footer-text">Already part of the journey?</span>
+              <button type="button" id="switchToLoginBtn" class="link-btn signup-btn">Sign in</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             2. LOGIN FORM PANEL (Right Side)
+             ================================================================ -->
+        <section class="form-panel login-panel" id="loginPanel" aria-label="Account Login" aria-hidden="false">
+          <div class="form-inner">
+            <div class="form-header">
+              <h2 class="form-title">WELCOME BACK.</h2>
+              <p class="form-subtitle">Your journey isn't over yet. Sign in and continue exploring the unknown.</p>
+            </div>
+
+            <div id="loginAlert" class="form-alert" role="alert" aria-live="polite" hidden>
+              <span class="alert-icon"></span>
+              <span class="alert-text"></span>
+            </div>
+
+            <form id="loginForm" class="auth-form" novalidate>
+              <!-- Email Field -->
+              <div class="form-group" id="loginEmailGroup">
+                <label for="loginEmailInput" class="form-label">Email</label>
+                <div class="input-wrapper">
+                  <input 
+                    type="email" 
+                    id="loginEmailInput" 
+                    name="email"
+                    class="form-input" 
+                    placeholder="Enter your email" 
+                    autocomplete="email"
+                    required
+                  >
+                </div>
+                <p class="field-error-msg" id="loginEmailError" role="alert"></p>
+              </div>
+
+              <!-- Password Field -->
+              <div class="form-group" id="loginPasswordGroup">
+                <label for="loginPasswordInput" class="form-label">Password</label>
+                <div class="input-wrapper password-wrapper">
+                  <input 
+                    type="password" 
+                    id="loginPasswordInput" 
+                    name="password"
+                    class="form-input" 
+                    placeholder="Enter your password" 
+                    autocomplete="current-password"
+                    required
+                  >
+                  <button 
+                    type="button" 
+                    class="toggle-password-btn" 
+                    id="toggleLoginPasswordBtn"
+                    aria-label="Show password"
+                    title="Toggle password visibility"
+                  >
+                    <svg class="eye-icon eye-show" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8z"></path>
+                      <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    <svg class="eye-icon eye-hide" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display: none;">
+                      <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                    <line x1="1" y1="1" x2="23" y2="23"></line>
+                    </svg>
+                  </button>
+                </div>
+                <p class="field-error-msg" id="loginPasswordError" role="alert"></p>
+              </div>
+
+              <!-- Remember Me & Forgot Password Row -->
+              <div class="form-options">
+                <label class="remember-me-label" for="loginRememberMeCheckbox">
+                  <input type="checkbox" id="loginRememberMeCheckbox" name="rememberMe" class="custom-checkbox">
+                  <span class="checkbox-custom-box" aria-hidden="true">
+                    <svg viewBox="0 0 12 10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="1.5 5.5 4.5 8.5 10.5 1.5"></polyline>
+                    </svg>
+                  </span>
+                  <span class="remember-text">Remember me</span>
+                </label>
+
+                <button type="button" id="forgotPasswordLink" class="link-btn forgot-password-btn">
+                  Forgot password?
+                </button>
+              </div>
+
+              <!-- Button: Dive Back In -->
+              <button type="submit" id="signInBtn" class="btn btn-primary">
+                <span class="btn-text">Dive Back In</span>
+                <span class="spinner" aria-hidden="true"></span>
+              </button>
+
+              <!-- Google Button: Continue with Google -->
+              <button type="button" id="googleSignInBtn" class="btn btn-secondary google-btn">
+                <svg class="google-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                  <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                </svg>
+                <span>Continue with Google</span>
+              </button>
+            </form>
+
+            <div class="form-footer">
+              <span class="footer-text">New here?</span>
+              <button type="button" id="switchToSignupBtn" class="link-btn signup-btn">Create your account</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================================
+             3. SLIDING PROMOTIONAL OVERLAY (Smooth 650ms Horizontal Transform)
+             ================================================================ -->
+        <aside class="sliding-overlay" id="slidingOverlay" aria-label="Promotional Showcase">
+          <div class="overlay-bg" aria-hidden="true"></div>
+          <div class="overlay-glass" aria-hidden="true"></div>
+
+          <div class="overlay-inner-content">
+            <header class="logo-container">
+              <div class="logo-mark" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="currentColor" fill-opacity="0.3"></polygon>
+                </svg>
+              </div>
+              <span class="logo-text">AVS</span>
+            </header>
+
+            <div class="promo-content-wrapper">
+              <!-- Login State Promo Copy -->
+              <div class="promo-text-item active" id="loginPromoContent">
+                <h2 class="promo-heading">
+                  DIVE INTO<br>
+                  UNIMAGINABLE<br>
+                  DIMENSIONS.
+                </h2>
+                <p class="promo-description">
+                  Step beyond the familiar and discover places, experiences, and possibilities that exist beyond imagination.
+                </p>
+                <p class="promo-tagline">
+                  Your journey into the unknown begins here.
+                </p>
+              </div>
+
+              <!-- Signup State Promo Copy ('HEY!! LET'S GO....' as requested) -->
+              <div class="promo-text-item" id="signupPromoContent">
+                <h2 class="promo-heading">
+                  HEY!!<br>
+                  LET'S GO....
+                </h2>
+                <p class="promo-description">
+                  Create your account and unlock extraordinary landscapes, bespoke journeys, and limitless discoveries.
+                </p>
+                <p class="promo-tagline">
+                  Explore beyond the known.
+                </p>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </main>
+  </div>
+
+
+  <!-- ====================================================================
+       VIEW 3: AFTER LOGIN — STREAMLINED DASHBOARD (Current User & Registered Users)
+       ==================================================================== -->
+  <div id="dashboardView" class="app-view dashboard-view">
+    
+    <!-- Dashboard Top Bar Navigation -->
+    <header class="navbar-wrapper">
+      <nav class="navbar dashboard-nav" aria-label="Dashboard Navigation">
+        <a href="#" class="nav-logo" id="dashLogoBtn">
+          <div class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="currentColor" fill-opacity="0.3"></polygon>
+            </svg>
+          </div>
+          <span class="logo-text">AVS</span>
+        </a>
+
+        <div class="dashboard-user-bar">
+          <span class="user-display-name" id="userNavName">Akshat</span>
+          <button type="button" class="btn btn-ghost dash-signout-btn" id="signOutBtn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="signout-icon">
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+              <polyline points="16 17 21 12 16 7"></polyline>
+              <line x1="21" y1="12" x2="9" y2="12"></line>
+            </svg>
+            <span>Sign Out</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Streamlined Dashboard Content -->
+    <main class="dashboard-content">
+      <div class="dashboard-container">
+        
+        <!-- Welcome Card: Current User Name -->
+        <section class="dash-welcome-card">
+          <div class="welcome-text-block">
+            <h1 class="welcome-heading" id="dashGreeting">WELCOME, AKSHAT</h1>
+          </div>
+        </section>
+
+        <!-- All Registered Users Section -->
+        <section class="dash-explorers-section">
+          <div class="explorers-section-header">
+            <div>
+              <h2 class="dash-section-title">ALL REGISTERED USERS</h2>
+            </div>
+            <div class="explorers-header-actions">
+              <span class="explorers-count-badge" id="explorersCountBadge">4 Users</span>
+              <button type="button" class="btn btn-ghost refresh-users-btn" id="refreshUsersBtn" title="Sync users">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="refresh-icon">
+                  <path d="M23 4v6h-6"></path>
+                  <path d="M1 20v-6h6"></path>
+                  <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                </svg>
+                <span>Refresh Sync</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Users Table -->
+          <div class="explorers-table-container">
+            <table class="explorers-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>User Name</th>
+                  <th>Email</th>
+                  <th>Role</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="explorersTableBody">
+                <tr>
+                  <td colspan="5" class="table-loading">Loading users...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+
+  <!-- ====================================================================
+       MODAL: EDIT USER
+       ==================================================================== -->
+  <div id="editUserModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="editModalTitle">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="closeEditModalBtn" aria-label="Close modal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-header">
+        <div class="modal-icon-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+          </svg>
+        </div>
+        <h3 id="editModalTitle" class="modal-title">Edit User Record</h3>
+        <p class="modal-subtitle">Update user profile and details.</p>
+      </div>
+      <form id="editUserForm" class="modal-form" novalidate>
+        <input type="hidden" id="editUserId">
+        <div class="form-group">
+          <label for="editUserNameInput" class="form-label">Full Name</label>
+          <input type="text" id="editUserNameInput" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label for="editUserEmailInput" class="form-label">Email Address</label>
+          <input type="email" id="editUserEmailInput" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label for="editUserRoleInput" class="form-label">Role</label>
+          <input type="text" id="editUserRoleInput" class="form-input" placeholder="e.g. Master Explorer">
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-secondary" id="cancelEditBtn">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="saveEditBtn">
+            <span class="btn-text">Save Changes</span>
+            <span class="spinner" aria-hidden="true"></span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- ====================================================================
+       MODAL: FORGOT PASSWORD
+       ==================================================================== -->
+  <div id="forgotPasswordModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="forgotModalTitle">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="closeForgotModalBtn" aria-label="Close modal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="modal-header">
+        <div class="modal-icon-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+          </svg>
+        </div>
+        <h3 id="forgotModalTitle" class="modal-title">Reset Password</h3>
+        <p class="modal-subtitle">Enter the email associated with your account and we will send a password reset link.</p>
+      </div>
+      <form id="forgotPasswordForm" class="modal-form" novalidate>
+        <div class="form-group">
+          <label for="forgotEmailInput" class="form-label">Email Address</label>
+          <input type="email" id="forgotEmailInput" class="form-input" placeholder="name@dimension.com" required>
+          <p class="field-error-msg" id="forgotEmailError"></p>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-secondary" id="cancelForgotBtn">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="sendResetBtn">Send Reset Link</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Main JavaScript Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

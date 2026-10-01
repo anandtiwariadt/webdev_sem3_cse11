@@ -1,0 +1,22 @@
+{
+  "name": "avs-dimensions-portal",
+  "version": "1.0.0",
+  "description": "AVS - Dive into Unimaginable Dimensions Full-Stack Web Application",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "avs",
+    "auth",
+    "dashboard",
+    "rest-api"
+  ],
+  "author": "AVS Team",
+  "license": "ISC"
+}
